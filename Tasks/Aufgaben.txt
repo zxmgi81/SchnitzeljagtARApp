@@ -1,0 +1,8 @@
+Aufgaben:
+
+Generelle Projektstruktur
+
+Minispiel Projektstruktur
+
+Xml Template 
+    - Erklärung
