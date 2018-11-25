@@ -6,6 +6,7 @@
                 <Longitude>Long</Longitude>
                 <Altitude>Alt</Altitude>
             </geopunkt>
+            <character name="ID" tag="tag in chapter"/>
             <text>Random Fact</text>
         </fact>
     </randomfacts>
@@ -60,7 +61,7 @@
             </event>
             
             <minispiel mId="ID">
-                <gewonnenText>Yay!</gewonnenText>
+                <gewonnenText>Yay! Du hast {0} Punkte bekommen.</gewonnenText>
                 <verlorenText>Schade...</verlorenText>
             </minispiel>
             
