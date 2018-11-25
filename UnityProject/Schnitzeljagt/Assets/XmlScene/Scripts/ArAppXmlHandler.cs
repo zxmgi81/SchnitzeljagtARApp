@@ -1,19 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
+using System.IO;
 using UnityEngine;
-
 
 struct Character
 {
 
 }
-
 struct Chapter
 {
 
 }
 
+enum EventType
+{
+
+}
 
 public class ArAppXmlHandler : MonoBehaviour {
 
@@ -39,6 +42,13 @@ public class ArAppXmlHandler : MonoBehaviour {
 
     void LoadXML(int chapter)
     {
+        XmlReader xmlReader = null;// XmlReader.Create();
+
+        while(xmlReader.Read())
+        {
+
+        }
+
 
     }
 }
