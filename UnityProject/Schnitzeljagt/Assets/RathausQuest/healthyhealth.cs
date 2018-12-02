@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class healthyhealth : MonoBehaviour {
 
 //
-    public GameObject heart1, heart2, heart3, star1, star2, star3, gameOver;
+    public GameObject heart1, heart2, heart3, star1, star2, star3;
+    public Text gameOver;
     public static int health, stars;
 
 	void Start () {
@@ -17,7 +19,6 @@ public class healthyhealth : MonoBehaviour {
         star1.gameObject.SetActive(true);
         star2.gameObject.SetActive(true);
         star3.gameObject.SetActive(true);
-        gameOver.gameObject.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -27,19 +28,16 @@ public class healthyhealth : MonoBehaviour {
                 heart1.gameObject.SetActive(true);
                 heart2.gameObject.SetActive(true);
                 heart3.gameObject.SetActive(true);
-                gameOver.gameObject.SetActive(false);
                 break;
         case 2:
                 heart1.gameObject.SetActive(true);
                 heart2.gameObject.SetActive(true);
                 heart3.gameObject.SetActive(false);
-                gameOver.gameObject.SetActive(false);
                 break;
         case 1:
                 heart1.gameObject.SetActive(true);
                 heart2.gameObject.SetActive(false);
                 heart3.gameObject.SetActive(false);
-                gameOver.gameObject.SetActive(false);
                 break;
         case 0:
                 heart1.gameObject.SetActive(false);
@@ -49,7 +47,7 @@ public class healthyhealth : MonoBehaviour {
                 {
                     break;
                 }
-                gameOver.gameObject.SetActive(true);
+                gameOver.text = "Game over";
                 break;
         }
 		
